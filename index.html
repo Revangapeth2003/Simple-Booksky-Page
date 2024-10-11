@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookSky</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google fonts for poopins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>BookSky</h1>
+    </header>
+    <div class="container">
+      <div id="bookContainer" class="book-container">
+        <h2>Rich Dad Poor Dad</h2>
+        <h4>Revanth</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quam
+          blanditiis ullam modi neque nesciunt, perferendis eum voluptates,
+          placeat quasi reiciendis! Quos optio earum aspernatur. Nam officia
+          alias cupiditate velit!
+        </p>
+        <button id="delBtn" onclick="deleteBook(event)">Delete</button>
+      </div>
+    </div>
+    <div id="popupLayout" class="popup-overlay">
+      <div class="enter-popup" id="enterPopup">
+        <form action="">
+          <h3>ADD BOOK</h3>
+          <input type="text" class="book-title" placeholder="Book Title" />
+          <input type="text" class="book-author" placeholder="Book Author" />
+          <textarea
+            class="short-discription"
+            placeholder="Short Discription"
+          ></textarea>
+          <button class="add">ADD</button>
+          <button class="cancel" id="cancel">CANCEL</button>
+        </form>
+      </div>
+    </div>
+    <button id="add-popup">➕</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
 
